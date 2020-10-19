@@ -1,14 +1,28 @@
-header .nav {
-    display: inline;
-    align-self: flex-end;
-}
-
 header {
     background-color:lightslategray;
     color: white;
     padding-top:20px;
     min-height:50px;
     border-bottom:darkgreen 3px solid;
+}
+
+header .name {
+    align-self: flex-start;
+    float: left;
+}
+
+header #name h1 {
+    margin: 0;
+}
+
+
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+header .nav {
+    display: none;
 }
 
 header a {
@@ -30,31 +44,20 @@ header li {
     padding: 0 25px 0 25px;
 }
 
-header .name {
-    align-self: flex-start;
-    float: left;
-}
-
-header #name h1 {
-    margin: 0;
-}
-
-header nav {
-    float: right;
-    align-items: center;
-}
-
 header .highlight, header .current a {
     color:lightgreen;
     font-weight: bold;
-}
-
-header h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
 }
 
 header a:hover {
     color: darkgreen;
     font-weight: bold;
 }
+
+@media(min-width:768px) {
+    header .nav {
+        display: inline;
+        align-self: center;
+        align-items: center;
+    }
+}    

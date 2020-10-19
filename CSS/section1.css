@@ -4,6 +4,7 @@
     padding-top:20px;
     min-height:50px;
     border-bottom:darkgreen 3px solid;
+    padding-bottom: 20px;
 }
 
 .section1 .social-media img {
@@ -25,6 +26,7 @@
 
 .section1 .search {
     justify-content: flex-end;
+    display: none;
 }
 
 .section1 form {
@@ -51,4 +53,20 @@
 .section1 .button:hover {
     color: darkgreen;
     font-weight: bold;
+}
+
+@media(min-width:768px) {
+
+    .section1 .search {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .section1 .menu { 
+        display: none;
+    }
+
+    .section1 .search-logo { 
+        display: none;
+    }
 }
