@@ -1,10 +1,14 @@
+header .nav {
+    display: inline;
+    align-self: flex-end;
+}
+
 header {
     background-color:lightslategray;
     color: white;
     padding-top:20px;
     min-height:50px;
     border-bottom:darkgreen 3px solid;
-    
 }
 
 header a {
@@ -26,7 +30,8 @@ header li {
     padding: 0 25px 0 25px;
 }
 
-header #name {
+header .name {
+    align-self: flex-start;
     float: left;
 }
 
