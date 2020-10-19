@@ -1,0 +1,15 @@
+
+.section2 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section2 a:hover {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+
